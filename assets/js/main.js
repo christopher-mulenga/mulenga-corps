@@ -38,7 +38,6 @@
       var isOpen = mainNav.classList.toggle("open");
       hamburger.classList.toggle("open", isOpen);
       hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      document.body.style.overflow = isOpen ? "hidden" : "";
     });
 
     // Close menu when a nav link is tapped (mobile)
@@ -47,8 +46,16 @@
         mainNav.classList.remove("open");
         hamburger.classList.remove("open");
         hamburger.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
       });
+    });
+
+    // Close menu when clicking outside the header
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".site-header")) {
+        mainNav.classList.remove("open");
+        hamburger.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
     });
   }
 
@@ -201,7 +208,7 @@
 
     function closeLightbox() {
       overlay.classList.remove("open");
-      document.body.style.overflow = "";
+      
     }
 
     function showNext() { openLightbox((currentIndex + 1) % items.length); }

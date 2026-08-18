@@ -600,3 +600,105 @@ The Mulenga Corps Website demonstrates the practical application of Interactive 
 The project combines semantic HTML5, CSS3, Vanilla JavaScript and external web services to provide a functional user experience.
 
 Particular attention was given to responsive design and accessibility because the project is inspired by the Zambia Library, Cultural and Skills Centre for the Visually Impaired and its role in providing educational, rehabilitation, skills-development and community services to people with visual impairments.
+
+# 18. Brand Identity and Logo Design
+
+The Mulenga Corps logo and associated brand identity were designed using **Adobe Illustrator**. The original editable logo artwork is maintained as an Adobe Illustrator file and includes multiple logo variations developed for different applications and backgrounds.
+
+The logo design incorporates a distinctive graphic mark representing the visual identity of Mulenga Corps, together with the organizational name and the tagline:
+
+> **MULENGA CORPS**
+> **Library • Culture • Skills**
+
+The logo is intended to communicate the organization's connection to literacy, accessible information, cultural development and practical skills.
+
+## 18.1 Logo Variations
+
+The Illustrator artwork contains several variations of the logo, including:
+
+* Primary coloured logo.
+* Blue logo variation.
+* Brown logo variation.
+* Black monochrome logo.
+* Light/off-white logo variation.
+* Full horizontal logo containing the organizational name and tagline.
+
+The availability of multiple variations allows the identity to remain usable across different backgrounds, documents, digital interfaces and printed materials.
+
+## 18.2 Brand Colours
+
+The colours used in the original logo artwork include:
+
+| Colour         | Hex Value | Application                                     |
+| -------------- | --------- | ----------------------------------------------- |
+| Logo Blue      | `#0C3D62` | Primary logo/wordmark colour                    |
+| Logo Brown     | `#8B5A2B` | Secondary logo and accent colour                |
+| Logo Off-White | `#DDD7CC` | Light logo variation and supporting elements    |
+| Black          | `#000000` | Monochrome logo                                 |
+| White          | `#FFFFFF` | Reversed logo and light-background applications |
+
+The blue and brown combination provides a visual balance between a professional institutional identity and a warmer, more human character.
+
+## 18.3 Website Colour Relationship
+
+The website uses a separate primary interface colour:
+
+```text
+#315B65
+```
+
+This colour is used throughout the CSS design system for navigation, buttons, headings, backgrounds and other interface elements.
+
+The logo's original blue:
+
+```text
+#0C3D62
+```
+
+is intentionally documented separately from the website's interface colour:
+
+```text
+#315B65
+```
+
+This distinction allows the original logo artwork to retain its own identity while the website interface uses a colour optimized for the overall web design system.
+
+## 18.4 Design Software
+
+The logo was created using:
+
+**Adobe Illustrator**
+
+The editable Illustrator artwork serves as the source design from which logo variations can be exported into formats suitable for web and print use, including SVG and other image formats.
+
+Vector-based artwork was used so that the logo can be scaled to different sizes without losing its fundamental shape and clarity.
+
+## 18.5 File Format
+
+The project includes the logo artwork in **SVG/vector format**, allowing the logo to be used at different resolutions while maintaining sharp edges.
+
+The original Adobe Illustrator source file is also retained as the editable master artwork.
+
+Using vector artwork is particularly suitable for:
+
+* Website branding.
+* Favicons and interface graphics.
+* Business documents.
+* Social media graphics.
+* Posters and promotional materials.
+* Large-format printing.
+* Institutional publications.
+
+## 18.6 Design Considerations
+
+The logo and website identity were developed with consistency in mind. The website combines the logo's institutional character with a responsive digital interface built using HTML5, CSS3 and Vanilla JavaScript.
+
+The identity is also aligned with the project's broader focus on:
+
+* Library and information access.
+* Braille and accessible literacy.
+* Culture.
+* Skills development.
+* Visual accessibility.
+* Community participation.
+* Institutional services.

@@ -119,6 +119,7 @@ p{ margin: 0 0 1em; color: var(--text-soft); }
 }
 .site-header .container{
   height:100%; display:flex; align-items:center; justify-content:space-between;
+  position:relative;
 }
 .brand{ display:flex; align-items:center; gap:10px; }
 .brand img{ height:52px; width:auto; }
@@ -410,15 +411,22 @@ img.loaded{ opacity:1; }
 }
 @media (max-width: 760px){
   .main-nav{
-    position:fixed; top: var(--header-h); left:0; right:0; bottom:0;
-    background:#fff; transform: translateX(100%); transition: transform .35s ease;
-    padding: 30px 24px; overflow-y:auto;
+    position:fixed; top: var(--header-h); left:0; right:0; z-index:999;
+    background:rgba(255,255,255,.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); max-height:0; overflow:hidden;
+    transition: max-height .35s ease, box-shadow .35s ease;
+    box-shadow: none; border-top:2px solid var(--grey);
   }
-  .main-nav.open{ transform: translateX(0); }
-  .main-nav ul{ flex-direction:column; gap:0; }
+  .main-nav.open{ max-height:520px; box-shadow: 0 8px 20px rgba(10,61,98,.14); }
+  .main-nav ul{ flex-direction:column; gap:0; padding:8px 0 16px; }
   .main-nav li{ border-bottom:1px solid var(--grey); }
-  .main-nav a{ display:block; padding:16px 4px; }
-  .hamburger{ display:flex; }
+  .main-nav li:last-child{ border-bottom:none; }
+  .main-nav a{ display:flex; align-items:center; padding:15px 24px; font-size:1rem; transition: background .2s ease, color .2s ease; }
+  .main-nav a::after{ display:none; }
+  .main-nav a:hover{ background: rgba(231,238,243,.7); color: var(--brown); }
+  .main-nav a.active{ background: rgba(241,231,219,.7); color: var(--brown); border-left:4px solid var(--brown); padding-left:20px; }
+  .main-nav .btn-primary{ margin:12px 24px 6px; display:block; width:calc(100% - 48px); padding:14px 30px; text-align:center; border-radius: var(--radius); }
+  .main-nav .btn-primary:hover{ background: var(--brown-dark); }
+  .hamburger{ display:flex; z-index:1001; }
   .grid-3, .grid-4, .dept-preview-grid, .portfolio-grid{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: 1fr 1fr; }
   .milestones{ grid-template-columns: 1fr 1fr; }
