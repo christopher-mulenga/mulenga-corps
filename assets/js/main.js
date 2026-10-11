@@ -456,9 +456,9 @@
   if (header) {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 12) {
-        header.style.boxShadow = "0 4px 20px rgba(10,61,98,.16)";
+        header.classList.add("scrolled");
       } else {
-        header.style.boxShadow = "0 2px 14px rgba(10,61,98,.08)";
+        header.classList.remove("scrolled");
       }
     });
   }

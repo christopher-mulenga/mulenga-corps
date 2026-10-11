@@ -251,7 +251,7 @@ The website uses:
 **Display font:**
 
 ```text
-Playfair Display, Georgia, serif
+EB Garamond, Georgia, serif
 ```
 
 **Body font:**
